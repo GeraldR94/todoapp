@@ -203,7 +203,34 @@ color: var(--colortitulos);
     text-decoration: line-through;
 }
 
-/* -----------------++++HOME++++-------------------- */
+@media (max-width: 1024px) {
+    .icon-nav {
+      display: flex;
+    }
+    .nav-bar {
+      display: none;
+    }
+  
+    .main-container {
+      flex-direction: row;
+      align-items: center;
+      width: 50%;
+      margin: 0 auto;
+    }
+  } 
+
+  @media (min-width: 1024px) {
+    .icon-nav {
+      display: none;
+    }
+     .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      
+    }
+  } 
+
+  /* -----------------++++HOME++++-------------------- */
 
 .main-container {
     display: flex;
